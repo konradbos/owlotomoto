@@ -13,6 +13,7 @@
     <properties>
         <java.version>1.7</java.version>
         <jsoup.version>1.8.1</jsoup.version>
+		<protege-owl.version>3.5</protege-owl.version>
         <apache.commons.version>3.3.2</apache.commons.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -43,7 +44,11 @@
             <artifactId>jsoup</artifactId>
             <version>${jsoup.version}</version>
         </dependency>
-
+		<dependency>
+            <groupId>edu.stanford.smi.protegex.owl</groupId>
+            <artifactId>protege-owl</artifactId>
+            <version>${protege-owl.version}</version>
+        </dependency>
     </dependencies>
     
 </project>
