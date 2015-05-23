@@ -44,6 +44,11 @@
             <artifactId>jsoup</artifactId>
             <version>${jsoup.version}</version>
         </dependency>
+        <dependency>
+            <groupId>edu.stanford.smi.protege</groupId>
+            <artifactId>protege</artifactId>
+            <version>${protege-owl.version}</version>
+        </dependency>
 		<dependency>
             <groupId>edu.stanford.smi.protegex.owl</groupId>
             <artifactId>protege-owl</artifactId>

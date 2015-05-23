@@ -16,207 +16,207 @@
       <owl:Class rdf:ID="Pojazd"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:ID="Motocykl"/>
+      <owl:Class rdf:ID="Ciezarowy"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="Dostawczy"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="Ciezarowy"/>
+      <owl:Class rdf:ID="Motocykl"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#Ciezarowy">
     <rdfs:subClassOf>
       <owl:Class rdf:about="#Pojazd"/>
     </rdfs:subClassOf>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Motocykl"/>
-    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Osobowy"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Dostawczy"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Osobowy"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Motocykl"/>
+    </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="Miasto">
     <owl:disjointWith>
-      <owl:Class rdf:ID="Wersja"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:ID="Silnik"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:ID="Marka"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:ID="Paliwo"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:ID="Model"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Pojazd"/>
+      <owl:Class rdf:ID="Nadwozie"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:ID="Kraj"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:ID="Nadwozie"/>
+      <owl:Class rdf:about="#Pojazd"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Model"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Paliwo"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Marka"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Silnik"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Wersja"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#Dostawczy">
+    <owl:disjointWith rdf:resource="#Osobowy"/>
+    <owl:disjointWith rdf:resource="#Ciezarowy"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Motocykl"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Ciezarowy"/>
-    <owl:disjointWith rdf:resource="#Osobowy"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#Pojazd"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#Motocykl">
-    <owl:disjointWith rdf:resource="#Ciezarowy"/>
-    <owl:disjointWith rdf:resource="#Dostawczy"/>
     <owl:disjointWith rdf:resource="#Osobowy"/>
+    <owl:disjointWith rdf:resource="#Dostawczy"/>
+    <owl:disjointWith rdf:resource="#Ciezarowy"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#Pojazd"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#Paliwo">
     <owl:disjointWith>
-      <owl:Class rdf:about="#Kraj"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Miasto"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Pojazd"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Wersja"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Silnik"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Marka"/>
+      <owl:Class rdf:about="#Nadwozie"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#Model"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#Nadwozie"/>
+      <owl:Class rdf:about="#Marka"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Silnik"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wersja"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Pojazd"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Miasto"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Kraj"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:about="#Pojazd">
     <owl:disjointWith>
-      <owl:Class rdf:about="#Nadwozie"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Silnik"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Kraj"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Miasto"/>
-    <owl:disjointWith rdf:resource="#Paliwo"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Wersja"/>
+      <owl:Class rdf:about="#Model"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#Marka"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="#Model"/>
-    </owl:disjointWith>
-  </owl:Class>
-  <owl:Class rdf:about="#Marka">
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Model"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
       <owl:Class rdf:about="#Wersja"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Pojazd"/>
+    <owl:disjointWith rdf:resource="#Paliwo"/>
+    <owl:disjointWith rdf:resource="#Miasto"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Kraj"/>
     </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#Silnik"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Paliwo"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Nadwozie"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Miasto"/>
   </owl:Class>
-  <owl:Class rdf:about="#Silnik">
+  <owl:Class rdf:about="#Marka">
+    <owl:disjointWith rdf:resource="#Miasto"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Nadwozie"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Paliwo"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Silnik"/>
+    </owl:disjointWith>
     <owl:disjointWith>
       <owl:Class rdf:about="#Kraj"/>
     </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Nadwozie"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Paliwo"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Model"/>
-    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Pojazd"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Wersja"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Miasto"/>
-    <owl:disjointWith rdf:resource="#Pojazd"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Model"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Silnik">
     <owl:disjointWith rdf:resource="#Marka"/>
+    <owl:disjointWith rdf:resource="#Pojazd"/>
+    <owl:disjointWith rdf:resource="#Miasto"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wersja"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Model"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Paliwo"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Nadwozie"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Kraj"/>
+    </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="VIN"/>
   <owl:Class rdf:about="#Nadwozie">
-    <owl:disjointWith rdf:resource="#Marka"/>
-    <owl:disjointWith rdf:resource="#Silnik"/>
-    <owl:disjointWith rdf:resource="#Miasto"/>
-    <owl:disjointWith rdf:resource="#Pojazd"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Model"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Wersja"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Paliwo"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Kraj"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Paliwo"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Wersja"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Model"/>
-    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Pojazd"/>
+    <owl:disjointWith rdf:resource="#Miasto"/>
+    <owl:disjointWith rdf:resource="#Silnik"/>
+    <owl:disjointWith rdf:resource="#Marka"/>
   </owl:Class>
   <owl:Class rdf:about="#Kraj">
-    <owl:disjointWith rdf:resource="#Pojazd"/>
-    <owl:disjointWith rdf:resource="#Paliwo"/>
+    <owl:disjointWith rdf:resource="#Silnik"/>
+    <owl:disjointWith rdf:resource="#Nadwozie"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Model"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Miasto"/>
+    <owl:disjointWith rdf:resource="#Marka"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Wersja"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Marka"/>
-    <owl:disjointWith rdf:resource="#Miasto"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Model"/>
-    </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Nadwozie"/>
-    <owl:disjointWith rdf:resource="#Silnik"/>
+    <owl:disjointWith rdf:resource="#Paliwo"/>
+    <owl:disjointWith rdf:resource="#Pojazd"/>
   </owl:Class>
   <owl:Class rdf:about="#Wersja">
+    <owl:disjointWith rdf:resource="#Paliwo"/>
+    <owl:disjointWith rdf:resource="#Silnik"/>
+    <owl:disjointWith rdf:resource="#Pojazd"/>
+    <owl:disjointWith rdf:resource="#Nadwozie"/>
+    <owl:disjointWith rdf:resource="#Kraj"/>
+    <owl:disjointWith rdf:resource="#Marka"/>
+    <owl:disjointWith rdf:resource="#Miasto"/>
     <owl:disjointWith>
       <owl:Class rdf:about="#Model"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="#Miasto"/>
-    <owl:disjointWith rdf:resource="#Marka"/>
-    <owl:disjointWith rdf:resource="#Kraj"/>
-    <owl:disjointWith rdf:resource="#Nadwozie"/>
-    <owl:disjointWith rdf:resource="#Pojazd"/>
-    <owl:disjointWith rdf:resource="#Silnik"/>
-    <owl:disjointWith rdf:resource="#Paliwo"/>
   </owl:Class>
   <owl:Class rdf:about="#Model">
-    <owl:disjointWith rdf:resource="#Silnik"/>
-    <owl:disjointWith rdf:resource="#Wersja"/>
-    <owl:disjointWith rdf:resource="#Miasto"/>
-    <owl:disjointWith rdf:resource="#Pojazd"/>
-    <owl:disjointWith rdf:resource="#Kraj"/>
-    <owl:disjointWith rdf:resource="#Marka"/>
-    <owl:disjointWith rdf:resource="#Nadwozie"/>
     <owl:disjointWith rdf:resource="#Paliwo"/>
+    <owl:disjointWith rdf:resource="#Nadwozie"/>
+    <owl:disjointWith rdf:resource="#Marka"/>
+    <owl:disjointWith rdf:resource="#Kraj"/>
+    <owl:disjointWith rdf:resource="#Pojazd"/>
+    <owl:disjointWith rdf:resource="#Miasto"/>
+    <owl:disjointWith rdf:resource="#Wersja"/>
+    <owl:disjointWith rdf:resource="#Silnik"/>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="pojazdZKraju">
     <rdfs:range rdf:resource="#Pojazd"/>
@@ -255,12 +255,6 @@
   <owl:ObjectProperty rdf:ID="jestMarki">
     <rdfs:range rdf:resource="#Marka"/>
     <rdfs:domain rdf:resource="#Model"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="posiadaVIN">
-    <rdfs:domain rdf:resource="#Pojazd"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdfs:range rdf:resource="#VIN"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="maNadwozie">
     <rdfs:domain rdf:resource="#Pojazd"/>
@@ -363,14 +357,16 @@
     <rdfs:domain rdf:resource="#Wersja"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
   </owl:DatatypeProperty>
+  <owl:InverseFunctionalProperty rdf:ID="posiadaVIN">
+    <rdfs:domain rdf:resource="#Pojazd"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#VIN"/>
+  </owl:InverseFunctionalProperty>
   <rdf:Description rdf:ID="Wersja_6">
     <rokProdukcjiDo rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
     >2012</rokProdukcjiDo>
   </rdf:Description>
-  <Osobowy rdf:ID="Osobowy_1">
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Testowy test</rdfs:comment>
-  </Osobowy>
   <Osobowy rdf:ID="BMW_E90_id1">
     <kierownicaPoPrawejStronie rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >true</kierownicaPoPrawejStronie>
